@@ -5,7 +5,7 @@
 -->
 <resources>
 
-    <bool name="config_button_brightness_support">false</bool>
+    <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">128</integer>
 
 </resources>
