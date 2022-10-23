@@ -23,6 +23,7 @@
 #
 
 $(call inherit-product, vendor/oneplus/cheeseburger/cheeseburger-vendor.mk)
+$(call inherit-product, vendor/moto/dolby/moto_dolby.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -60,6 +61,10 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     CheeseburgerWifiOverlay
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Inherit from oneplus msm8998-common
 $(call inherit-product, device/oneplus/msm8998-common/common.mk)
